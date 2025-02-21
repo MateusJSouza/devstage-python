@@ -1,7 +1,6 @@
 import pytest
 from .eventos_repository import EventosRepository
 
-
 @pytest.mark.skip("Insert in DB")
 def test_insert_eventos():
   event_name = "eventoTeste2"
