@@ -34,7 +34,8 @@ class SubscriberManager():
         "Type": "Ranking",
         "count": len(formatted_event_ranking),
         "ranking": formatted_event_ranking
-      }
+      },
+      status_code = 200
     )
     
     
@@ -54,5 +55,6 @@ class SubscriberManager():
           "count": len(formatted_subscriber),
           "subscribers": formatted_subscriber,
         }
-      }
+      },
+      status_code = 200
     )

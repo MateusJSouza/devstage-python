@@ -39,7 +39,7 @@ class SubscribersRepository(SubscribersRepositoryInterface):
         .query(Inscritos)
         .filter(
             Inscritos.link == link,
-            Inscritos.event_id == event_id
+            Inscritos.evento_id == event_id
         )
         .all()
       )

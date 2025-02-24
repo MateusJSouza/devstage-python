@@ -5,8 +5,8 @@ from .subscribers_repository import SubscribersRepository
 def test_insert():
   subscriber_info = {
       "name": "teste10",
-      "email": "email23@email.com",
-      "evento_id": 2
+      "email": "teste@gmail.com",
+      "evento_id": 4
   }
 
   subs_repo = SubscribersRepository()
@@ -21,6 +21,7 @@ def test_select_subscriber():
     resp = subs_repo.select_subscriber(email, evento_id)
     print(resp.nome)
 
+@pytest.mark.skip("Select in DB")
 def test_ranking():
     evento_id = 3
     subs_repo = SubscribersRepository()
